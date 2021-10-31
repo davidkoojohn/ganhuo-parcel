@@ -1,3 +1,11 @@
+import "bootstrap"
+import "bootstrap/dist/css/bootstrap.css"
+import jQuery from "jquery"
+import noPhoto from "../img/noPhoto.jpg"
+import wbb from "../img/wbb.jpeg"
+window.$ = window.jQuery = jQuery
+
+
 $(function (){
     const $subject = $('.main-menu li').eq(3)
     $subject.on('mouseenter', function (){
@@ -130,7 +138,7 @@ $(function (){
                     if (item.images[0] && item.images[0].startsWith('http')) {
                         imgUrl = item.images[0]
                     } else {
-                        imgUrl = '../img/noPhoto.jpg'
+                        imgUrl = noPhoto
                     }
                     $('.list').append(
                         `<div class="item">
@@ -215,7 +223,7 @@ $(function (){
                 if (res.data[0].images[0] && res.data[0].images[0].startsWith('http')) {
                     imgUrl = res.data[0].images[0]
                 } else {
-                    imgUrl = '../img/wbb.jpeg'
+                    imgUrl = wbb
                 }
                 let years = year(res.data[0].createdAt)
                 let months = month(res.data[0].createdAt)
@@ -252,7 +260,7 @@ $(function (){
                 if (item.images[0] && item.images[0].startsWith('http')) {
                     imgUrl = item.images[0]
                 } else {
-                    imgUrl = '../img/noPhoto.jpg'
+                    imgUrl = noPhoto
                 }
                 $('.gallery').append(`<a href="javascript:void(0)">
                         <img src="${imgUrl}" alt="">
@@ -271,7 +279,7 @@ $(function (){
                 if (item.images[0] && item.images[0].startsWith('http')) {
                     imgUrl = item.images[0]
                 } else {
-                    imgUrl = '../img/noPhoto.jpg'
+                    imgUrl = noPhoto
                 }
                 $('.articleWidget').eq(0).append(`<div class="list-item">
                        <a href="javascript:void(0)" class="photo"> <img src="${imgUrl}" alt=""></a>
@@ -294,7 +302,7 @@ $(function (){
                 if (item.images[0] && item.images[0].startsWith('http')) {
                     imgUrl = item.images[0]
                 } else {
-                    imgUrl = '../img/noPhoto.jpg'
+                    imgUrl = noPhoto
                 }
                 $('.articleWidget').eq(1).append(`<div class="list-item">
                        <a href="javascript:void(0)" class="photo"> <img src="${imgUrl}" alt=""></a>
