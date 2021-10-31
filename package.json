@@ -1,0 +1,23 @@
+{
+  "name": "ganhuo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkoojohn/ganhuo-parcel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidkoojohn/ganhuo-parcel/issues"
+  },
+  "homepage": "https://github.com/davidkoojohn/ganhuo-parcel#readme",
+  "devDependencies": {
+    "parcel": "^2.0.0"
+  }
+}
